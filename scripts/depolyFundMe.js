@@ -49,7 +49,6 @@ async function main() {
     console.log(`Balance of second account ${secondAccount.address} is ${secondAccountBalanceInFundMe}`);
 }
 async function verifyFundMe(fundMeAddr, args) {
-
     await hre.run("verify:verify", {
         address: fundMeAddr,
         constructorArguments: args,
